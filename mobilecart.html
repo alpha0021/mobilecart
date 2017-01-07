@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    #go1{
+      display:inline-block;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>PRODUCTS FOR SALE</h2>
+  <P>these are products that are ready for sale.</P>
+  <p>click on the image</p>
+  <!--product serial with image1-->
+     <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+              <!--<a href="" target="_blank">-->
+                <img id="go1" src="https://www.jbhifi.com.au/FileLibrary/ProductResources/Images/180292-M-LO.jpg" alt="mobile1">
+                  <div class="product1">
+                    <p>This is our latest collection.</p>
+                    <button id="delete">delete</button>
+                  </div>
+          </div>
+        </div>
+     </div>
+  <!--end of product one-->
+  
+  <!--product2-->
+   <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+                <img id ="go1" src="https://www.jbhifi.com.au/FileLibrary/ProductResources/Images/180292-M-LO.jpg" alt="mobile1">
+                  <div class="product1">
+                    <p>This is our latest collection.</p>
+                    <button id="delete2">delete</button>
+                  </div>
+          </div>
+        </div>
+     </div>
+  <!--end of product 2-->
+  
+  <!--product 3-->
+   <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+              <!--<a href="amazon.com" target="_blank">-->
+                <img  id ="go1" src="https://www.jbhifi.com.au/FileLibrary/ProductResources/Images/180292-M-LO.jpg" alt="mobile1">
+                  <div class="product1">
+                    <p>This is our latest collection.</p>
+                  </div>
+          </div>
+        </div>
+     </div>
+  <!--end of product3-->
+  <script>
+      $(document).ready(function(){
+        $("#delete").click(function(){
+          $("#go1").hide("slow")
+        });
+      });
+  </script>
+</div>
+</body>
+</html>
